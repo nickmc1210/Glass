@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A17FB8161A69E78900F1A54B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17FB8151A69E78900F1A54B /* AppDelegate.swift */; };
+		A17FB8181A69E78900F1A54B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17FB8171A69E78900F1A54B /* ViewController.swift */; };
+		A17FB81B1A69E78900F1A54B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A17FB8191A69E78900F1A54B /* Main.storyboard */; };
+		A17FB81D1A69E78900F1A54B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A17FB81C1A69E78900F1A54B /* Images.xcassets */; };
+		A17FB8201A69E78900F1A54B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A17FB81E1A69E78900F1A54B /* LaunchScreen.xib */; };
+		A17FB82C1A69E78900F1A54B /* GlassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17FB82B1A69E78900F1A54B /* GlassTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A17FB8261A69E78900F1A54B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A17FB8081A69E78900F1A54B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A17FB80F1A69E78900F1A54B;
+			remoteInfo = Glass;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A17FB8101A69E78900F1A54B /* Glass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Glass.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A17FB8141A69E78900F1A54B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A17FB8151A69E78900F1A54B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A17FB8171A69E78900F1A54B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A17FB81A1A69E78900F1A54B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A17FB81C1A69E78900F1A54B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A17FB81F1A69E78900F1A54B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A17FB8251A69E78900F1A54B /* GlassTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlassTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A17FB82A1A69E78900F1A54B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A17FB82B1A69E78900F1A54B /* GlassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A17FB80D1A69E78900F1A54B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A17FB8221A69E78900F1A54B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A17FB8071A69E78900F1A54B = {
+			isa = PBXGroup;
+			children = (
+				A17FB8121A69E78900F1A54B /* Glass */,
+				A17FB8281A69E78900F1A54B /* GlassTests */,
+				A17FB8111A69E78900F1A54B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A17FB8111A69E78900F1A54B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A17FB8101A69E78900F1A54B /* Glass.app */,
+				A17FB8251A69E78900F1A54B /* GlassTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A17FB8121A69E78900F1A54B /* Glass */ = {
+			isa = PBXGroup;
+			children = (
+				A17FB8151A69E78900F1A54B /* AppDelegate.swift */,
+				A17FB8171A69E78900F1A54B /* ViewController.swift */,
+				A17FB8191A69E78900F1A54B /* Main.storyboard */,
+				A17FB81C1A69E78900F1A54B /* Images.xcassets */,
+				A17FB81E1A69E78900F1A54B /* LaunchScreen.xib */,
+				A17FB8131A69E78900F1A54B /* Supporting Files */,
+			);
+			path = Glass;
+			sourceTree = "<group>";
+		};
+		A17FB8131A69E78900F1A54B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A17FB8141A69E78900F1A54B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A17FB8281A69E78900F1A54B /* GlassTests */ = {
+			isa = PBXGroup;
+			children = (
+				A17FB82B1A69E78900F1A54B /* GlassTests.swift */,
+				A17FB8291A69E78900F1A54B /* Supporting Files */,
+			);
+			path = GlassTests;
+			sourceTree = "<group>";
+		};
+		A17FB8291A69E78900F1A54B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A17FB82A1A69E78900F1A54B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A17FB80F1A69E78900F1A54B /* Glass */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A17FB82F1A69E78900F1A54B /* Build configuration list for PBXNativeTarget "Glass" */;
+			buildPhases = (
+				A17FB80C1A69E78900F1A54B /* Sources */,
+				A17FB80D1A69E78900F1A54B /* Frameworks */,
+				A17FB80E1A69E78900F1A54B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Glass;
+			productName = Glass;
+			productReference = A17FB8101A69E78900F1A54B /* Glass.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A17FB8241A69E78900F1A54B /* GlassTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A17FB8321A69E78900F1A54B /* Build configuration list for PBXNativeTarget "GlassTests" */;
+			buildPhases = (
+				A17FB8211A69E78900F1A54B /* Sources */,
+				A17FB8221A69E78900F1A54B /* Frameworks */,
+				A17FB8231A69E78900F1A54B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A17FB8271A69E78900F1A54B /* PBXTargetDependency */,
+			);
+			name = GlassTests;
+			productName = GlassTests;
+			productReference = A17FB8251A69E78900F1A54B /* GlassTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A17FB8081A69E78900F1A54B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Nicholas McCardel";
+				TargetAttributes = {
+					A17FB80F1A69E78900F1A54B = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					A17FB8241A69E78900F1A54B = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = A17FB80F1A69E78900F1A54B;
+					};
+				};
+			};
+			buildConfigurationList = A17FB80B1A69E78900F1A54B /* Build configuration list for PBXProject "Glass" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A17FB8071A69E78900F1A54B;
+			productRefGroup = A17FB8111A69E78900F1A54B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A17FB80F1A69E78900F1A54B /* Glass */,
+				A17FB8241A69E78900F1A54B /* GlassTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A17FB80E1A69E78900F1A54B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A17FB81B1A69E78900F1A54B /* Main.storyboard in Resources */,
+				A17FB8201A69E78900F1A54B /* LaunchScreen.xib in Resources */,
+				A17FB81D1A69E78900F1A54B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A17FB8231A69E78900F1A54B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A17FB80C1A69E78900F1A54B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A17FB8181A69E78900F1A54B /* ViewController.swift in Sources */,
+				A17FB8161A69E78900F1A54B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A17FB8211A69E78900F1A54B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A17FB82C1A69E78900F1A54B /* GlassTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A17FB8271A69E78900F1A54B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A17FB80F1A69E78900F1A54B /* Glass */;
+			targetProxy = A17FB8261A69E78900F1A54B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A17FB8191A69E78900F1A54B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A17FB81A1A69E78900F1A54B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A17FB81E1A69E78900F1A54B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A17FB81F1A69E78900F1A54B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A17FB82D1A69E78900F1A54B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A17FB82E1A69E78900F1A54B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A17FB8301A69E78900F1A54B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Glass/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A17FB8311A69E78900F1A54B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Glass/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A17FB8331A69E78900F1A54B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GlassTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Glass.app/Glass";
+			};
+			name = Debug;
+		};
+		A17FB8341A69E78900F1A54B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GlassTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Glass.app/Glass";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A17FB80B1A69E78900F1A54B /* Build configuration list for PBXProject "Glass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A17FB82D1A69E78900F1A54B /* Debug */,
+				A17FB82E1A69E78900F1A54B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A17FB82F1A69E78900F1A54B /* Build configuration list for PBXNativeTarget "Glass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A17FB8301A69E78900F1A54B /* Debug */,
+				A17FB8311A69E78900F1A54B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A17FB8321A69E78900F1A54B /* Build configuration list for PBXNativeTarget "GlassTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A17FB8331A69E78900F1A54B /* Debug */,
+				A17FB8341A69E78900F1A54B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A17FB8081A69E78900F1A54B /* Project object */;
+}
