@@ -13,6 +13,18 @@
 		A17FB81D1A69E78900F1A54B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A17FB81C1A69E78900F1A54B /* Images.xcassets */; };
 		A17FB8201A69E78900F1A54B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A17FB81E1A69E78900F1A54B /* LaunchScreen.xib */; };
 		A17FB82C1A69E78900F1A54B /* GlassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17FB82B1A69E78900F1A54B /* GlassTests.swift */; };
+		A17FB83A1A6AC67300F1A54B /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A17FB8381A6AC67300F1A54B /* Bolts.framework */; };
+		A17FB83B1A6AC67300F1A54B /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A17FB8391A6AC67300F1A54B /* Parse.framework */; };
+		A17FB83D1A6AC68900F1A54B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A17FB83C1A6AC68900F1A54B /* AudioToolbox.framework */; };
+		A17FB83F1A6AC68C00F1A54B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A17FB83E1A6AC68C00F1A54B /* CFNetwork.framework */; };
+		A17FB8411A6AC69200F1A54B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A17FB8401A6AC69200F1A54B /* CoreGraphics.framework */; };
+		A17FB8431A6AC69800F1A54B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A17FB8421A6AC69800F1A54B /* CoreLocation.framework */; };
+		A17FB8451A6AC69D00F1A54B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A17FB8441A6AC69D00F1A54B /* MobileCoreServices.framework */; };
+		A1850DC21A6AC6F9006036F1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1850DC11A6AC6F9006036F1 /* QuartzCore.framework */; };
+		A1850DC41A6AC6FE006036F1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1850DC31A6AC6FE006036F1 /* Security.framework */; };
+		A1850DC81A6AC709006036F1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1850DC71A6AC709006036F1 /* SystemConfiguration.framework */; };
+		A1850DCA1A6AC70F006036F1 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A1850DC91A6AC70F006036F1 /* libz.dylib */; };
+		A1850DCC1A6AC715006036F1 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A1850DCB1A6AC715006036F1 /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +48,19 @@
 		A17FB8251A69E78900F1A54B /* GlassTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlassTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A17FB82A1A69E78900F1A54B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A17FB82B1A69E78900F1A54B /* GlassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassTests.swift; sourceTree = "<group>"; };
+		A17FB8351A6A0D8500F1A54B /* Glass-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Glass-Bridging-Header.h"; sourceTree = "<group>"; };
+		A17FB8381A6AC67300F1A54B /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		A17FB8391A6AC67300F1A54B /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		A17FB83C1A6AC68900F1A54B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A17FB83E1A6AC68C00F1A54B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		A17FB8401A6AC69200F1A54B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A17FB8421A6AC69800F1A54B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A17FB8441A6AC69D00F1A54B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		A1850DC11A6AC6F9006036F1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A1850DC31A6AC6FE006036F1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A1850DC71A6AC709006036F1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A1850DC91A6AC70F006036F1 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		A1850DCB1A6AC715006036F1 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +68,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1850DCC1A6AC715006036F1 /* libsqlite3.dylib in Frameworks */,
+				A1850DCA1A6AC70F006036F1 /* libz.dylib in Frameworks */,
+				A1850DC81A6AC709006036F1 /* SystemConfiguration.framework in Frameworks */,
+				A1850DC41A6AC6FE006036F1 /* Security.framework in Frameworks */,
+				A1850DC21A6AC6F9006036F1 /* QuartzCore.framework in Frameworks */,
+				A17FB8451A6AC69D00F1A54B /* MobileCoreServices.framework in Frameworks */,
+				A17FB8431A6AC69800F1A54B /* CoreLocation.framework in Frameworks */,
+				A17FB8411A6AC69200F1A54B /* CoreGraphics.framework in Frameworks */,
+				A17FB83F1A6AC68C00F1A54B /* CFNetwork.framework in Frameworks */,
+				A17FB83D1A6AC68900F1A54B /* AudioToolbox.framework in Frameworks */,
+				A17FB83B1A6AC67300F1A54B /* Parse.framework in Frameworks */,
+				A17FB83A1A6AC67300F1A54B /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +96,18 @@
 		A17FB8071A69E78900F1A54B = {
 			isa = PBXGroup;
 			children = (
+				A1850DCB1A6AC715006036F1 /* libsqlite3.dylib */,
+				A1850DC91A6AC70F006036F1 /* libz.dylib */,
+				A1850DC71A6AC709006036F1 /* SystemConfiguration.framework */,
+				A1850DC31A6AC6FE006036F1 /* Security.framework */,
+				A1850DC11A6AC6F9006036F1 /* QuartzCore.framework */,
+				A17FB8441A6AC69D00F1A54B /* MobileCoreServices.framework */,
+				A17FB8421A6AC69800F1A54B /* CoreLocation.framework */,
+				A17FB8401A6AC69200F1A54B /* CoreGraphics.framework */,
+				A17FB83E1A6AC68C00F1A54B /* CFNetwork.framework */,
+				A17FB83C1A6AC68900F1A54B /* AudioToolbox.framework */,
+				A17FB8381A6AC67300F1A54B /* Bolts.framework */,
+				A17FB8391A6AC67300F1A54B /* Parse.framework */,
 				A17FB8121A69E78900F1A54B /* Glass */,
 				A17FB8281A69E78900F1A54B /* GlassTests */,
 				A17FB8111A69E78900F1A54B /* Products */,
@@ -83,6 +132,7 @@
 				A17FB81C1A69E78900F1A54B /* Images.xcassets */,
 				A17FB81E1A69E78900F1A54B /* LaunchScreen.xib */,
 				A17FB8131A69E78900F1A54B /* Supporting Files */,
+				A17FB8351A6A0D8500F1A54B /* Glass-Bridging-Header.h */,
 			);
 			path = Glass;
 			sourceTree = "<group>";
@@ -161,9 +211,16 @@
 				TargetAttributes = {
 					A17FB80F1A69E78900F1A54B = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 55P2G2R377;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
 					};
 					A17FB8241A69E78900F1A54B = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 55P2G2R377;
 						TestTargetID = A17FB80F1A69E78900F1A54B;
 					};
 				};
@@ -272,7 +329,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development IOS Push Services: com.BHL.Glass";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development IOS Push Services: com.BHL.Glass";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -292,6 +350,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "81ec05e6-17db-4acf-a09a-0bfad57ed677";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -314,7 +373,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development IOS Push Services: com.BHL.Glass";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development IOS Push Services: com.BHL.Glass";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -327,6 +387,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "81ec05e6-17db-4acf-a09a-0bfad57ed677";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -336,9 +397,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development IOS Push Services: com.BHL.Glass";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development IOS Push Services: com.BHL.Glass";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Glass/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "81ec05e6-17db-4acf-a09a-0bfad57ed677";
+				SWIFT_OBJC_BRIDGING_HEADER = "Glass/Glass-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -346,9 +417,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development IOS Push Services: com.BHL.Glass";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development IOS Push Services: com.BHL.Glass";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Glass/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "81ec05e6-17db-4acf-a09a-0bfad57ed677";
+				SWIFT_OBJC_BRIDGING_HEADER = "Glass/Glass-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -356,6 +436,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -367,6 +449,7 @@
 				INFOPLIST_FILE = GlassTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Glass.app/Glass";
 			};
 			name = Debug;
@@ -375,6 +458,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -382,6 +467,7 @@
 				INFOPLIST_FILE = GlassTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Glass.app/Glass";
 			};
 			name = Release;
@@ -405,6 +491,7 @@
 				A17FB8311A69E78900F1A54B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A17FB8321A69E78900F1A54B /* Build configuration list for PBXNativeTarget "GlassTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +500,7 @@
 				A17FB8341A69E78900F1A54B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

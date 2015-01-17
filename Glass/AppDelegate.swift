@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        //register parse
+        Parse.setApplicationId("1lgI4k3e5708UAtpw6UnETeOrp2FHyGRaQB0jE5G", clientKey: "cLvCxUSB2b3kiWZ5feMdumbpbzGFCaGjSWJQeDPU")
+        //register push notifications
+        let userNotificationTypes = UIUserNotificationType.None
+        let settings = UIUserNotificationSettings(forTypes: userNotificationTypes, categories: nil)
+        application.registerUserNotificationSettings(settings)
+        application.registerForRemoteNotifications()
+        
         return true
     }
 
@@ -41,6 +49,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
+        //store the deviceToken in the current installation and save it to Parse
+        var currentInstallation = PFInstallation.currentInstallation()
+        currentInstallation.setDeviceTokenFromData(deviceToken)
+        currentInstallation.channels = ["main"]
+        currentInstallation.saveInBackgroundWithBlock(nil)
+        
+    }
+    
+    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
+        //
+        println("NOTIFICATION RECIEVED")
+        PFPush.handlePush(userInfo)
+    }
 
 }
 
