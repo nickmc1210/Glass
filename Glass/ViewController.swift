@@ -6,13 +6,15 @@
 //  Copyright (c) 2015 Nicholas McCardel. All rights reserved.
 //
 
+typealias TouchData = [NSTimeInterval: NSValue]
+
 import UIKit
 
 class ViewController: UIViewController {
 
     var destroyTime: NSTimeInterval = 1.5
     
-    var touchData: [NSTimeInterval: NSValue] = [:]
+    var touchData: TouchData = [:]
     
     var touchDate: NSDate!
     
@@ -80,7 +82,7 @@ class ViewController: UIViewController {
     
     override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
         //
-        println("total Touch Data: \(self.touchData)\n")
+        useTouchData(self.touchData)
         self.touchData.removeAll(keepCapacity: false)
     }
     
@@ -100,19 +102,47 @@ class ViewController: UIViewController {
         circleView.alpha = 0.75
         circleView.backgroundColor = UIColor.whiteColor()
         circleView.layer.cornerRadius = radius
-        
         return circleView
     }
     
     func addTouchData(touch: UITouch) {
         //
-        println("add touch data invoked")
         let location = touch.locationInView(self.view)
         let value = NSValue(CGPoint: location)
         let interval = self.touchDate.timeIntervalSinceNow
-        println("location: \(location)")
-        println("interval: \(interval)")
         self.touchData.updateValue(value, forKey: interval)
+    }
+    
+    func useTouchData(touchData: TouchData) {
+        let sortedTouchArray = Array(touchData.keys).sorted(>)
+        println("Circle Creation Intervals: \(sortedTouchArray)")
+        for value in sortedTouchArray {
+            let location = NSValue.CGPointValue(touchData[value]!)
+            let delay = value * -1
+            println("delay for addCircle function set to \(delay)")
+            addCircleAtLocationAfterDelayWithOptionalTimedDestruction(location(), radius: 5, delay: delay, persist: self.persist)
+        }
+        println("\n")
+    }
+    
+    func addCircleAtLocationAfterDelayWithOptionalTimedDestruction(location: CGPoint, radius: CGFloat, delay: NSTimeInterval, persist: Bool) {
+        //
+        println("addCircleAtLocationAfterDelayWithOptionalTimedDestruction called")
+        let circle = makeCircle(location, radius: radius)
+        let timer = NSTimer.scheduledTimerWithTimeInterval(delay, target: self, selector: "addCircle:", userInfo: ["circle" : circle, "persist" : persist], repeats: false)
+    }
+    
+    func addCircle(timer: NSTimer) {
+        //
+        println("addCircle called")
+        let circle = timer.userInfo?["circle"] as UIView
+        let persist = timer.userInfo?["persist"] as Bool
+        
+        if persist != true {
+            let timer = NSTimer.scheduledTimerWithTimeInterval(self.destroyTime, target: circle, selector: "removeFromSuperview", userInfo: nil, repeats: false)
+        }
+        self.view.addSubview(circle)
+        
     }
 }
 
