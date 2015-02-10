@@ -77,7 +77,7 @@ class ViewController: UIViewController {
     }
     
     override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
-        // needs to be hooked up to backend pass
+        // needs to be hooked up to backend passing
         for touch in touches {
             let touch = touch as UITouch
             println("touch timestamp = \(touch.timestamp)")
