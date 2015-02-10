@@ -96,18 +96,6 @@
 		A17FB8071A69E78900F1A54B = {
 			isa = PBXGroup;
 			children = (
-				A1850DCB1A6AC715006036F1 /* libsqlite3.dylib */,
-				A1850DC91A6AC70F006036F1 /* libz.dylib */,
-				A1850DC71A6AC709006036F1 /* SystemConfiguration.framework */,
-				A1850DC31A6AC6FE006036F1 /* Security.framework */,
-				A1850DC11A6AC6F9006036F1 /* QuartzCore.framework */,
-				A17FB8441A6AC69D00F1A54B /* MobileCoreServices.framework */,
-				A17FB8421A6AC69800F1A54B /* CoreLocation.framework */,
-				A17FB8401A6AC69200F1A54B /* CoreGraphics.framework */,
-				A17FB83E1A6AC68C00F1A54B /* CFNetwork.framework */,
-				A17FB83C1A6AC68900F1A54B /* AudioToolbox.framework */,
-				A17FB8381A6AC67300F1A54B /* Bolts.framework */,
-				A17FB8391A6AC67300F1A54B /* Parse.framework */,
 				A17FB8121A69E78900F1A54B /* Glass */,
 				A17FB8281A69E78900F1A54B /* GlassTests */,
 				A17FB8111A69E78900F1A54B /* Products */,
@@ -140,6 +128,7 @@
 		A17FB8131A69E78900F1A54B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A1B6EE081A89F58200513100 /* Parse Frameworks */,
 				A17FB8141A69E78900F1A54B /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -160,6 +149,26 @@
 				A17FB82A1A69E78900F1A54B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A1B6EE081A89F58200513100 /* Parse Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1850DCB1A6AC715006036F1 /* libsqlite3.dylib */,
+				A1850DC91A6AC70F006036F1 /* libz.dylib */,
+				A1850DC71A6AC709006036F1 /* SystemConfiguration.framework */,
+				A1850DC31A6AC6FE006036F1 /* Security.framework */,
+				A1850DC11A6AC6F9006036F1 /* QuartzCore.framework */,
+				A17FB8441A6AC69D00F1A54B /* MobileCoreServices.framework */,
+				A17FB8421A6AC69800F1A54B /* CoreLocation.framework */,
+				A17FB8401A6AC69200F1A54B /* CoreGraphics.framework */,
+				A17FB83E1A6AC68C00F1A54B /* CFNetwork.framework */,
+				A17FB83C1A6AC68900F1A54B /* AudioToolbox.framework */,
+				A17FB8381A6AC67300F1A54B /* Bolts.framework */,
+				A17FB8391A6AC67300F1A54B /* Parse.framework */,
+			);
+			name = "Parse Frameworks";
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -17,12 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         //register parse
-        Parse.setApplicationId("1lgI4k3e5708UAtpw6UnETeOrp2FHyGRaQB0jE5G", clientKey: "cLvCxUSB2b3kiWZ5feMdumbpbzGFCaGjSWJQeDPU")
-        //register push notifications
-        let userNotificationTypes = UIUserNotificationType.None
-        let settings = UIUserNotificationSettings(forTypes: userNotificationTypes, categories: nil)
-        application.registerUserNotificationSettings(settings)
-        application.registerForRemoteNotifications()
+//        Parse.setApplicationId("1lgI4k3e5708UAtpw6UnETeOrp2FHyGRaQB0jE5G", clientKey: "cLvCxUSB2b3kiWZ5feMdumbpbzGFCaGjSWJQeDPU")
+//        //register push notifications
+//        let userNotificationTypes = UIUserNotificationType.None
+//        let settings = UIUserNotificationSettings(forTypes: userNotificationTypes, categories: nil)
+//        application.registerUserNotificationSettings(settings)
+//        application.registerForRemoteNotifications()
         
         return true
     }

@@ -13,11 +13,8 @@ import UIKit
 class ViewController: UIViewController {
 
     var destroyTime: NSTimeInterval = 1.5
-    
     var touchData: TouchData = [:]
-    
     var touchDate: NSDate!
-    
     var persist = false
     
     @IBOutlet weak var clearButton: UIButton!
@@ -37,19 +34,18 @@ class ViewController: UIViewController {
     
     @IBAction func clearButtonPressed() {
         //
-        let subviews = self.view.subviews
-        for view in subviews {
-            if view as? UIButton != self.clearButton && view as? UIButton != self.persistButton {
-                view.removeFromSuperview()
-            } else {
+        for view in self.view.subviews {
+            if view is UIButton {
                 println("button pressed")
+            } else {
+                view.removeFromSuperview()
             }
         }
     }
 
     @IBAction func persistButtonPressed() {
         //
-        if self.persist == false {
+        if self.persist != true {
             self.persist = true
             self.persistButton.titleLabel?.textColor = UIColor.redColor()
             self.persistButton.backgroundColor = UIColor.grayColor()
@@ -81,28 +77,14 @@ class ViewController: UIViewController {
     }
     
     override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
-        //
-        useTouchData(self.touchData)
-        self.touchData.removeAll(keepCapacity: false)
-    }
-    
-    func addCircleAtTouchWithTimedDestruction(touch: UITouch, radius: CGFloat, time: NSTimeInterval) {
-        //
-        let location = touch.locationInView(self.view)
-        let circle = makeCircle(location, radius: radius)
-        if persist == false {
-            let timer = NSTimer.scheduledTimerWithTimeInterval(time, target: circle, selector: "removeFromSuperview", userInfo: nil, repeats: false)
+        // needs to be hooked up to backend pass
+        for touch in touches {
+            let touch = touch as UITouch
+            println("touch timestamp = \(touch.timestamp)")
         }
-        self.view.addSubview(circle)
-    }
-    
-    func makeCircle(location: CGPoint, radius: CGFloat) -> UIView {
-        //
-        var circleView = UIView(frame: CGRectMake(location.x, location.y, radius * 2, radius * 2))
-        circleView.alpha = 0.75
-        circleView.backgroundColor = UIColor.whiteColor()
-        circleView.layer.cornerRadius = radius
-        return circleView
+        let timer = NSTimer.scheduledTimerWithTimeInterval(3
+            , target: self, selector: "useTouchDataFromTimer:", userInfo: self.touchData, repeats: true)
+        self.touchData.removeAll(keepCapacity: false)
     }
     
     func addTouchData(touch: UITouch) {
@@ -115,26 +97,50 @@ class ViewController: UIViewController {
     
     func useTouchData(touchData: TouchData) {
         let sortedTouchArray = Array(touchData.keys).sorted(>)
-        println("Circle Creation Intervals: \(sortedTouchArray)")
         for value in sortedTouchArray {
             let location = NSValue.CGPointValue(touchData[value]!)
             let delay = value * -1
-            println("delay for addCircle function set to \(delay)")
             addCircleAtLocationAfterDelayWithOptionalTimedDestruction(location(), radius: 5, delay: delay, persist: self.persist)
         }
-        println("\n")
+    }
+    
+    func useTouchDataFromTimer(timer: NSTimer) {
+        let touchData = timer.userInfo as TouchData
+        let sortedTouchArray = Array(touchData.keys).sorted(>)
+        for value in sortedTouchArray {
+            let location = NSValue.CGPointValue(touchData[value]!)
+            let delay = value * -1
+            addCircleAtLocationAfterDelayWithOptionalTimedDestruction(location(), radius: 5, delay: delay, persist: self.persist)
+        }
+    }
+    
+    func makeCircle(location: CGPoint, radius: CGFloat) -> UIView {
+        //
+        var circleView = UIView(frame: CGRectMake(location.x, location.y, radius * 2, radius * 2))
+        circleView.alpha = 0.75
+        circleView.backgroundColor = UIColor.whiteColor()
+        circleView.layer.cornerRadius = radius
+        return circleView
+    }
+    
+    func addCircleAtTouchWithTimedDestruction(touch: UITouch, radius: CGFloat, time: NSTimeInterval) {
+        //
+        let location = touch.locationInView(self.view)
+        let circle = makeCircle(location, radius: radius)
+        if persist == false {
+            let timer = NSTimer.scheduledTimerWithTimeInterval(time, target: circle, selector: "removeFromSuperview", userInfo: nil, repeats: false)
+        }
+        self.view.addSubview(circle)
     }
     
     func addCircleAtLocationAfterDelayWithOptionalTimedDestruction(location: CGPoint, radius: CGFloat, delay: NSTimeInterval, persist: Bool) {
         //
-        println("addCircleAtLocationAfterDelayWithOptionalTimedDestruction called")
         let circle = makeCircle(location, radius: radius)
         let timer = NSTimer.scheduledTimerWithTimeInterval(delay, target: self, selector: "addCircle:", userInfo: ["circle" : circle, "persist" : persist], repeats: false)
     }
     
     func addCircle(timer: NSTimer) {
         //
-        println("addCircle called")
         let circle = timer.userInfo?["circle"] as UIView
         let persist = timer.userInfo?["persist"] as Bool
         
